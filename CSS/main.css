@@ -181,6 +181,7 @@ header nav .form i{
     transform: translateY(-50%);
     top: 50%;
     right: 0;
+    cursor: pointer;
 }
 /* end header  */
 /* start landing */
@@ -245,9 +246,11 @@ header nav .form i{
 }
 .landing .fa-angle-left{
     left: 30px;
+    cursor: pointer;
 }
 .landing .fa-angle-right{
     right: 30px;
+    cursor: pointer;
 }
 .landing ul{
     position: absolute;
@@ -262,6 +265,15 @@ header nav .form i{
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 5px;
+}
+.landing ul li:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.landing ul:hover > :not(:hover){
+    border: 1px solid white;
+    background-color: transparent;
 }
 .landing ul .active{
     background-color: var(--main-color);
